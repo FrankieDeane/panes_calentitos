@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7a3e18">
+  <title>Tomy Panes Calentitos</title>
+  <meta name="description" content="Panes integrales y precocidos. Pedí por WhatsApp.">
+  <style>
+    :root {
+      --cream: #fff5df;
+      --paper: #fffaf0;
+      --brown: #4b2412;
+      --orange: #b95f20;
+      --gold: #e7ab44;
+      --green: #287544;
+      --blue: #2262a2;
+      --line: #e8c98f;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--brown);
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #fff9ec 0%, var(--cream) 100%);
+    }
+    .wrap { width: min(1080px, calc(100% - 32px)); margin: 0 auto; }
+    .hero {
+      padding: 48px 0 32px;
+      text-align: center;
+      background: radial-gradient(circle at center top, #fffdf7, #f7dfab);
+      border-bottom: 3px solid var(--line);
+    }
+    .eyebrow { margin: 0 0 10px; color: var(--orange); font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
+    h1 {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(2.4rem, 7vw, 4.7rem);
+      line-height: .95;
+      letter-spacing: -2px;
+    }
+    .subtitle { margin: 16px auto 0; max-width: 620px; font-size: 1.08rem; line-height: 1.5; }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 24px;
+      padding: 15px 22px;
+      border-radius: 999px;
+      color: white;
+      background: #25d366;
+      box-shadow: 0 7px 0 #158a41;
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .cta:hover { transform: translateY(2px); box-shadow: 0 5px 0 #158a41; }
+    .cta:focus-visible { outline: 4px solid #2444a0; outline-offset: 4px; }
+    main { padding: 40px 0 54px; }
+    h2 { margin: 0 0 22px; text-align: center; font-size: clamp(1.7rem, 4vw, 2.2rem); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card {
+      overflow: hidden;
+      background: var(--paper);
+      border: 2px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 8px 18px rgba(75,36,18,.10);
+    }
+    .card img { width: 100%; height: 185px; display: block; object-fit: cover; }
+    .card-body { padding: 17px; }
+    .tag { display: inline-block; padding: 5px 9px; border-radius: 999px; color: white; background: var(--orange); font-size: .74rem; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; }
+    .tag.green { background: var(--green); }
+    .tag.blue { background: var(--blue); }
+    h3 { min-height: 49px; margin: 11px 0 12px; font-size: 1.24rem; line-height: 1.1; text-transform: uppercase; }
+    .price { margin: 0; color: var(--brown); font-size: 1.65rem; font-weight: 900; }
+    .per { margin: 5px 0 0; color: #77523d; font-size: .9rem; }
+    .promos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 30px; }
+    .promo { padding: 25px; border: 3px dashed var(--gold); border-radius: 18px; text-align: center; background: #fff2cf; }
+    .promo h3 { min-height: 0; margin: 0 0 10px; font-size: 1.1rem; }
+    .promo strong { display: block; color: var(--orange); font-size: clamp(2rem, 5vw, 3rem); line-height: 1; }
+    .promo p { margin: 10px 0 0; font-weight: 700; }
+    .order { margin-top: 40px; padding: 30px 20px; border-radius: 20px; color: white; text-align: center; background: var(--brown); }
+    .order h2 { margin-bottom: 9px; }
+    .order p { margin: 0; color: #ffe7b5; font-size: 1.06rem; }
+    .order .cta { background: #25d366; }
+    footer { padding: 22px 16px 32px; text-align: center; color: #795d4a; font-size: .92rem; }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .card img { height: 140px; }
+      .card-body { padding: 13px; }
+      h3 { min-height: 0; font-size: 1.03rem; }
+      .price { font-size: 1.4rem; }
+    }
+    @media (max-width: 480px) {
+      .wrap { width: min(100% - 24px, 1080px); }
+      .hero { padding-top: 38px; }
+      .grid, .promos { grid-template-columns: 1fr; }
+      .card { display: grid; grid-template-columns: 42% 58%; }
+      .card img { height: 100%; min-height: 145px; }
+      .order { padding: 27px 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Panes integrales y precocidos</p>
+      <h1>Tomy Panes<br>Calentitos</h1>
+      <p class="subtitle">Panes ricos para todos los días. Hacé tu pedido fácil y rápido por WhatsApp.</p>
+      <a class="cta" href="https://wa.me/5491163045950?text=Hola%20Tomy%20Panes%20Calentitos%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener noreferrer" aria-label="Hacer un pedido por WhatsApp">💬 Pedir por WhatsApp</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section aria-labelledby="productos">
+      <h2 id="productos">Nuestros panes</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="image.jpg" alt="Pan Zeppelin integral cortado en rebanadas">
+          <div class="card-body">
+            <span class="tag">Integral</span>
+            <h3>Zeppelin integral</h3>
+            <p class="price">$3.500</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="image.jpg" alt="Cuadraditos de grasa">
+          <div class="card-body">
+            <span class="tag">Precocido</span>
+            <h3>Cuadraditos de grasa · 2 kg</h3>
+            <p class="price">$8.000</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="image.jpg" alt="Pan flautón precocido">
+          <div class="card-body">
+            <span class="tag">Precocido</span>
+            <h3>Flautón · 2 kg</h3>
+            <p class="price">$8.000</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="image.jpg" alt="Pan integral envasado">
+          <div class="card-body">
+            <span class="tag">Integral</span>
+            <h3>Pan integral</h3>
+            <p class="price">$3.500</p>
+            <p class="per">Harina integral y semillas</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="image.jpg" alt="Pan salvado envasado">
+          <div class="card-body">
+            <span class="tag green">Salvado</span>
+            <h3>Pan con salvado</h3>
+            <p class="price">$3.000</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="image.jpg" alt="Pan lacteado envasado">
+          <div class="card-body">
+            <span class="tag blue">Lactal</span>
+            <h3>Pan lacteado</h3>
+            <p class="price">$3.000</p>
+            <p class="per">Peso neto 380 g</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="promos" aria-label="Promociones">
+      <article class="promo">
+        <h3>⭐ Promo Zeppelin integral</h3>
+        <strong>3 x $3.000</strong>
+        <p>Cada uno</p>
+      </article>
+      <article class="promo">
+        <h3>⭐ Promo integral</h3>
+        <strong>3 x $3.000</strong>
+        <p>Cada uno</p>
+      </article>
+    </section>
+
+    <section class="order" aria-labelledby="pedidos">
+      <h2 id="pedidos">Tomamos pedidos</h2>
+      <p>Mínimo de compra: $9.000 o 2 kg de precocidos.</p>
+      <a class="cta" href="https://wa.me/5491163045950?text=Hola%20Tomy%20Panes%20Calentitos%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener noreferrer">💬 +54 9 11 6304-5950</a>
+    </section>
+  </main>
+
+  <footer>Tomy Panes Calentitos · Panes integrales y precocidos</footer>
+</body>
+</html>
